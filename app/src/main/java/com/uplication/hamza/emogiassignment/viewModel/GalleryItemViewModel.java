@@ -4,6 +4,7 @@ import android.databinding.BindingAdapter;
 import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.uplication.hamza.emogiassignment.R;
 import com.uplication.hamza.emogiassignment.model.Asset;
 import com.uplication.hamza.emogiassignment.model.Content;
 
@@ -37,6 +38,8 @@ public class GalleryItemViewModel {
   }
   @BindingAdapter({"imageUrl"})
   public static void setImage(ImageView imageView, String imageUrl){
-    Glide.with(imageView.getContext()).asGif().load(imageUrl).apply(RequestOptions.fitCenterTransform()).into(imageView);
+    Glide.with(imageView.getContext()).asGif().load(imageUrl)
+        .apply(new RequestOptions().error(R.drawable.error_no_internet))
+        .apply(RequestOptions.fitCenterTransform()).into(imageView);
   }
 }

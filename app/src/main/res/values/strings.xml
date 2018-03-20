@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">Emogi Assignment</string>
+  <string name="enter_tag">Enter tag</string>
+  <string name="action_search">Enter tag</string>
+  <string name="no_result_found">No result found. Please try another tag</string>
+  <string name="search_tag_hint">Use the search bar to search for tags</string>
+</resources>

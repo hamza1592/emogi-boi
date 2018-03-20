@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.uplication.hamza.emogiassignment.views.activities.SplashActivity">
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="5dp"
+      android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+      android:gravity="center_vertical"
+      android:onClick="startPreProcessedDataSearch"
+      android:text="Pre-processed data search"/>
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/secondaryTextLight"/>
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="5dp"
+      android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+      android:gravity="center_vertical"
+      android:onClick="startRawDataSearch"
+      android:text="Raw data search"/>
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/secondaryTextLight"/>
+  </LinearLayout>
+  <com.airbnb.lottie.LottieAnimationView
+    android:id="@+id/loading_la"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background_gallery"
+    app:lottie_fileName="animation-loading.json"
+    app:lottie_loop="true"
+    app:lottie_autoPlay="true"
+    />
+</RelativeLayout>
